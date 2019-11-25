@@ -9,7 +9,7 @@ $dbconn = pg_connect("host=ec2-54-243-47-196.compute-1.amazonaws.com port=5432 d
 $query = 'SELECT * FROM animasahun';
 $result = pg_query($dbconn, $query) or die('Query failed: ' . pg_last_error());
 
-
+var_dump($result);
 
 
 
